@@ -17,8 +17,6 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 	min-height: 90px;
 	/* background: #fff; */
 	width: 100%;
-	box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.2);
-    border-radius: 2px;
     border: 1px solid #e9e9e9;
 	margin-bottom: 15px;
 }
@@ -43,7 +41,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 }
 .info-box .progress,
 .info-box .progress .progress-bar {
-	border-radius: 0;
+
 }
 
 .info-box .progress .progress-bar {
@@ -55,17 +53,13 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 		color: #fff;
 		text-align: center;
 		background-color: #337ab7;
-		-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-		box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	
 		-webkit-transition: width .6s ease;
 		-o-transition: width .6s ease;
 		transition: width .6s ease;
 }
 .info-box-icon {
-	border-top-left-radius: 2px;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 2px;
+
 	display: block;
     overflow: hidden;
 	float: left;

@@ -31,7 +31,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
     background: #ddd;
     left: 31px;
     margin: 0;
-    border-radius: 2px;
+  
 }
 .timeline > li {
     position: relative;
@@ -47,10 +47,9 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
     clear: both;
 }
 .timeline > li > .timeline-item {
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    box-shadow:  0 1px 3px rgba(0, 0, 0, 0.1);
+   
     border:1px solid #d2d2d2;
-    border-radius: 3px;
+    
     margin-top: 0;
     background: #fff;
     color: #444;
@@ -90,8 +89,7 @@ a.timeline-btn:active
     display: inline-block;
     margin-bottom: 0;
     font-weight: 400;
-    border-radius: 0;
-    box-shadow: none;
+
     padding: 1px 5px;
     font-size: 12px;
     line-height: 1.5;
@@ -151,7 +149,7 @@ a.timeline-btn:hover
     position: absolute;
     color: #666;
     background: #d2d6de;
-    border-radius: 50%;
+  
     text-align: center;
     left: 18px;
     top: 5px;
@@ -161,13 +159,11 @@ a.timeline-btn:hover
     padding: 5px;
     display: inline-block;
     background-color: #fff;
-    border-radius: 4px;
 }
 .timeline-inverse > li > .timeline-item {
     background: #f0f0f0;
     border: 1px solid #ddd;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    
 }
 .timeline-inverse > li > .timeline-item > .timeline-header {
     border-bottom-color: #ddd;

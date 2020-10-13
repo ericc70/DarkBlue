@@ -183,7 +183,7 @@ div.mainmenu.generic4::before {
 	width: 25%;
 	height: 25%;
 	border: solid 30px white;
-	border-radius: 0% 200% 200% 0% / 0% 180% 180% 0%;
+	
 }
 .fa-dolibarr-css:after{
 	content: '';

@@ -22,9 +22,8 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
     overflow: hidden;
     background-color: #f5f5f5;
     background-color: rgba(128, 128, 128, 0.1);
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+   
 }
 
 .progress.spaced{
@@ -40,8 +39,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
     color: #fff;
     text-align: center;
     background-color: #337ab7;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
@@ -55,14 +53,13 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 
 .progress,
 .progress > .progress-bar {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+   
 }
 .progress,
 .progress > .progress-bar,
 .progress .progress-bar,
 .progress > .progress-bar .progress-bar {
-    border-radius: 1px;
+   
 }
 /* size variation */
 .progress.sm,
@@ -73,7 +70,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 .progress-sm,
 .progress.sm .progress-bar,
 .progress-sm .progress-bar {
-    border-radius: 1px;
+    
 }
 .progress.xs,
 .progress-xs {
@@ -83,7 +80,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 .progress-xs,
 .progress.xs .progress-bar,
 .progress-xs .progress-bar {
-    border-radius: 1px;
+
 }
 .progress.xxs,
 .progress-xxs {
@@ -93,7 +90,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 .progress-xxs,
 .progress.xxs .progress-bar,
 .progress-xxs .progress-bar {
-    border-radius: 1px;
+    
 }
 
 

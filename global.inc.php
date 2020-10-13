@@ -207,7 +207,7 @@ input:invalid, select:invalid {
 
 /* Focus definitions must be after standard definition */
 textarea:focus {
-    /* v6 box-shadow: 0 0 4px #8091BF; */
+  
 	border: 1px solid #aaa !important;
 }
 input:focus, select:focus {
@@ -215,13 +215,13 @@ input:focus, select:focus {
 }
 textarea.cke_source:focus
 {
-	box-shadow: none;
+
 }
 div#cke_dp_desc {
     margin-top: 5px;
 }
 textarea {
-	border-radius: 0;
+
 	border-top:solid 1px rgba(0,0,0,.2);
 	border-left:solid 1px rgba(0,0,0,.2);
 	border-right:solid 1px rgba(0,0,0,.2);
@@ -257,9 +257,9 @@ input.buttonpayment, button.buttonpayment, div.buttonpayment {
 	border: 0;
 	background-color: #9999bb;
 	white-space: normal;
-	box-shadow: 1px 1px 4px #bbb;
+
 	color: #fff;
-	border-radius: 4px;
+	
 	cursor: pointer;
 	max-width: 350px;
 }
@@ -385,21 +385,21 @@ input:disabled, textarea:disabled, select[disabled='disabled']
 }
 
 input.liste_titre {
-	box-shadow: none !important;
+	
 }
 input.removedfile {
 	padding: 0px !important;
 	border: 0px !important;
 	vertical-align: text-bottom;
 }
-input[type=file ]    { background-color: transparent; border-top: none; border-left: none; border-right: none; box-shadow: none; }
-input[type=checkbox] { background-color: transparent; border: none; box-shadow: none; }
-input[type=radio]    { background-color: transparent; border: none; box-shadow: none; }
-input[type=image]    { background-color: transparent; border: none; box-shadow: none; }
+input[type=file ]    { background-color: transparent; border-top: none; border-left: none; border-right: none; }
+input[type=checkbox] { background-color: transparent; border: none; }
+input[type=radio]    { background-color: transparent; border: none;  }
+input[type=image]    { background-color: transparent; border: none;  }
 input:-webkit-autofill {
 	background-color: #FDFFF0 !important;
 	background-image:none !important;
-	-webkit-box-shadow: 0 0 0 50px #FDFFF0 inset;
+
 }
 ::-webkit-input-placeholder { color:#ccc; }
 input:-moz-placeholder { color:#ccc; }
@@ -443,34 +443,28 @@ hr { border: 0; border-top: 1px solid #ccc; }
 	background-repeat: repeat-x;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	border: 1px solid #aaa;
-	-webkit-border-radius: 2px;
-	border-radius: 1px;
+
 
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #444;
 }
 .button:focus, .buttonDelete:focus  {
-	-webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 60, 0.2), 0px 0px 0px rgba(60,60,60,0.1);
-	box-shadow: 0px 0px 5px 1px rgba(0, 0, 60, 0.2), 0px 0px 0px rgba(60,60,60,0.1);
+	
 }
 .button:hover, .buttonDelete:hover   {
 	/* warning: having a larger shadow has side effect when button is completely on left of a table */
-	-webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(60,60,60,0.1);
-	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(60,60,60,0.1);
 }
 .button:disabled, .buttonDelete:disabled, .button.disabled {
 	opacity: 0.4;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+
     cursor: auto;
 }
 .buttonRefused {
 	pointer-events: none;
    	cursor: default;
 	opacity: 0.4;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+
 }
 .button_search, .button_removefilter {
     border: unset;
@@ -500,10 +494,8 @@ div.floatright
 }
 
 th .button {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-	-webkit-border-radius:0px !important;
-	border-radius:0px !important;
+/** */
+
 }
 .maxwidthsearch {		/* Max width of column with the search picto */
 	width: 54px;
@@ -943,7 +935,7 @@ select.flat.selectlimit {
 .imgdoc {
     margin: 18px;
     border: 1px solid #ccc;
-    box-shadow: 1px 1px 25px #aaa;
+   
     max-width: calc(100% - 56px);
 }
 .fa-file-text-o, .fa-file-code-o, .fa-file-powerpoint-o, .fa-file-excel-o, .fa-file-word-o, .fa-file-o, .fa-file-image-o, .fa-file-video-o, .fa-file-audio-o, .fa-file-archive-o, .fa-file-pdf-o {
@@ -1160,9 +1152,7 @@ table[summary="list_of_modules"] .fa-cog {
 		display: inline-block;
 	}
 
-	/*img.photoref, div.photoref {
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-	}*/
+
 }
 
 /* Force values for small screen 570 */
@@ -1272,8 +1262,7 @@ table[summary="list_of_modules"] .fa-cog {
 	}
     img.photoref, div.photoref {
     	border: 1px solid rgba(0, 0, 0, 0.2);
-    	box-shadow: none;
-        -webkit-box-shadow: none;
+    	
         padding: 4px;
     	height: 20px;
     	width: 20px;
@@ -1371,7 +1360,7 @@ td.showDragHandle {
 .side-nav {
 	display: table-cell;
 	border-<?php echo $right; ?>: 1px solid #E0E0E0;
-	box-shadow: 3px 0 6px -2px #eee;
+	
 	background: var(--colorbackvmenu1);
 	transition: left 0.5s ease;
 }
@@ -1396,7 +1385,7 @@ div.blockvmenulogo
 }
 .backgroundforcompanylogo {
     background-color: rgba(255,255,255,0.7);
-    border-radius: 4px;
+
 }
 .menulogocontainer img.mycompany {
     object-fit: contain;
@@ -1648,7 +1637,7 @@ span.widthpictotitle.pictotitle {
     opacity: 0.8;
     color: #fff !important;
     padding: 7px;
-    border-radius: 2px;
+  
     min-width: 30px;
     text-align: center;
 }
@@ -1724,12 +1713,7 @@ div.divphotoref {
 div.paginationref {
 	padding-bottom: 10px;
 }
-/* TODO
-div.statusref {
-   	padding: 10px;
-   	border: 1px solid #bbb;
-   	border-radius: 6px;
-} */
+
 div.statusref {
 	float: right;
 	padding-left: 12px;
@@ -1751,8 +1735,7 @@ div.statusrefbis {
 }
 img.photoref, div.photoref {
 	/* border: 1px solid #DDD; */
-    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    
     padding: 4px;
 	height: 80px;
 	width: 80px;
@@ -1772,7 +1755,7 @@ img.photorefnoborder {
 	width: 48px;
     object-fit: contain;
     border: 1px solid #AAA;
-    border-radius: 100px;
+  
 }
 .underrefbanner {
 }
@@ -1800,7 +1783,7 @@ div#id-top {
 <?php } else { ?>
 	background: var(--colorbackhmenu1);
 	/* background-image: linear-gradient(-45deg, <?php echo colorAdjustBrightness(colorArrayToHex(colorStringToArray($colorbackhmenu1)), '5'); ?>, var(--colorbackhmenu1)); */
-	/* box-shadow: 0px 0px 5px #eee; */
+	
 <?php } ?>
 }
 
@@ -2191,10 +2174,10 @@ form#login {
 	max-width: 530px;
 	color: #eee !important;
 	padding-bottom: 20px;
-	text-shadow: 1px 1px #444;
+
 }
 .login_table label {
-	text-shadow: 1px 1px 1px #FFF;
+
 }
 .login_table {
 	margin: 0px auto;  /* Center */
@@ -2211,10 +2194,9 @@ if (!empty($conf->global->MAIN_LOGIN_BACKGROUND)) {
 }
 ?>
 
-	-webkit-box-shadow: 0 2px 23px 2px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(60,60,60,0.15);
-	box-shadow: 0 2px 23px 2px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(60,60,60,0.15);
 
-	border-radius: 5px;
+
+	
 	/*border-top:solid 1px rgba(180,180,180,.4);
 	border-left:solid 1px rgba(180,180,180,.4);
 	border-right:solid 1px rgba(180,180,180,.4);
@@ -2239,7 +2221,7 @@ if (!empty($conf->global->MAIN_LOGIN_BACKGROUND)) {
     background-color: transparent;
     /* border: 2px solid #ccc; */
     min-width: 220px;
-    border-radius: 2px;
+ 
 }
 .login_table .tdinputlogin .fa {
 	padding-left: 10px;
@@ -2399,19 +2381,19 @@ img.login, img.printer, img.entity {
 .userimg.atoplogin img.userphoto, .userimgatoplogin img.userphoto {		/* size for user photo in login bar */
 	width: <?php echo $disableimages ? '26' : '32'; ?>px;
     height: <?php echo $disableimages ? '26' : '32'; ?>px;
-    border-radius: 50%;
+   
     background-size: contain;
     background-size: contain;
 }
 img.userphoto {			/* size for user photo in lists */
-	border-radius: 0.72em;
+	
 	width: 1.4em;
     height: 1.4em;
     background-size: contain;
     vertical-align: middle;
 }
 img.userphotosmall {			/* size for user photo in lists */
-	border-radius: 0.6em;
+	
 	width: 1.2em;
     height: 1.2em;
     background-size: contain;
@@ -2751,7 +2733,7 @@ div.tabsAction > a {
 
 a.tabTitle {
     color: rgba(0,0,0,0.4) !important;
-    text-shadow:1px 1px 1px #ffffff;
+   
 	font-family: <?php print $fontlist ?>;
 	font-weight: normal !important;
     padding: 4px 6px 2px 0px;
@@ -2826,8 +2808,7 @@ span.tabspan {
     margin: 0em 0.2em;
     text-decoration: none;
     white-space: nowrap;
-	-webkit-border-radius:4px 4px 0px 0px;
-	border-radius:4px 4px 0px 0px;
+	
 
     border-<?php print $right; ?>: 1px solid #555555;
     border-<?php print $left; ?>: 1px solid #D8D8D8;
@@ -3159,7 +3140,7 @@ div.pagination li {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  border-radius: 4px;
+  
 }
 div.pagination li.pagination a,
 div.pagination li.pagination span {
@@ -3176,8 +3157,7 @@ div.pagination li.pagination span.inactive {
 li.noborder.litext, li.noborder.litext a,
 div.pagination li a.inactive:hover,
 div.pagination li span.inactive:hover {
-  	-webkit-box-shadow: none !important;
-  	box-shadow: none !important;
+  	
 }
 /*div.pagination li.litext {
 	padding-top: 8px;
@@ -3208,20 +3188,17 @@ div.pagination li span {
 div.pagination li:first-child a,
 div.pagination li:first-child span {
   margin-left: 0;
-  /*border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;*/
+
 }
 div.pagination li:last-child a,
 div.pagination li:last-child span {
-  /*border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;*/
+
 }
 div.pagination li a:hover,
 div.pagination li:not(.paginationafterarrows,.title-button) span:hover,
 div.pagination li a:focus,
 div.pagination li:not(.paginationafterarrows,.title-button) span:focus {
-  -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
-  box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+
 }
 div.pagination li .active a,
 div.pagination li .active span,
@@ -3248,10 +3225,10 @@ div.pagination .disabled a:focus {
 }
 div.pagination li.pagination .active {
   text-decoration: underline;
-  box-shadow: none;
+
 }
 .paginationafterarrows .nohover {
-  box-shadow: none !important;
+
 }
 
 div.pagination li.paginationafterarrows {
@@ -3295,8 +3272,7 @@ table.hidepaginationnext .paginationnext {
 }
 .nohoverborder:hover {
 	border: unset;
-	box-shadow: unset;
-	-webkit-box-shadow: unset;
+	
 }
 .oddeven, .evenodd, .impair, .nohover .impair:hover, tr.impair td.nohover, .tagtr.oddeven
 {
@@ -3389,7 +3365,7 @@ div.liste_titre_bydiv {
 	border-collapse: collapse;
 	display: table;
 	padding: 2px 0px 2px 0;
-	box-shadow: none;
+	
 	/*width: calc(100% - 1px);	1px more, i don't know why so i remove */
 	width: calc(100%);
 }
@@ -3429,7 +3405,7 @@ tr.liste_titre th, th.liste_titre, tr.liste_titre td, td.liste_titre, form.liste
     height: 24px;
 }
 tr.liste_titre th a, th.liste_titre a, tr.liste_titre td a, td.liste_titre a, form.liste_titre div a, div.liste_titre a {
-	text-shadow: none !important;
+	
 	color: rgb(<?php echo $colortexttitlelink ?>);
 }
 tr.liste_titre_topborder td {
@@ -3438,7 +3414,7 @@ tr.liste_titre_topborder td {
     border-top-style: solid;
 }
 .liste_titre td a {
-	text-shadow: none !important;
+	
 	color: var(--colortexttitle);
 }
 .liste_titre td a.notasortlink {
@@ -3519,17 +3495,14 @@ table.noborder.paymenttable {
 
 /* Disable-Enable shadows */
 .noshadow {
-	-webkit-box-shadow: 0px 0px 0px #DDD !important;
-	box-shadow: 0px 0px 0px #DDD !important;
+	
 }
 .shadow {
-	-webkit-box-shadow: 2px 2px 5px #CCC !important;
-	box-shadow: 2px 2px 5px #CCC !important;
+	
 }
 
 div.tabBar .noborder {
-	-webkit-box-shadow: 0px 0px 0px #DDD !important;
-	box-shadow: 0px 0px 0px #DDD !important;
+	
 }
 
 #tablelines tr.liste_titre td, .paymenttable tr.liste_titre td, .margintable tr.liste_titre td, .tableforservicepart1 tr.liste_titre td {
@@ -3606,8 +3579,8 @@ ul.noborder li:nth-child(even):not(.liste_titre) {
     background: var(--colorbackbody);
     border: 1px solid var(--colorboxstatsborder);
     border-left: 6px solid var(--colorboxstatsborder);
-    /* box-shadow: 1px 1px 8px var(--colorboxstatsborder); */
-    border-radius: 0px;
+   
+   
 }
 .boxstats, .boxstats130, .boxstatscontent {
 	white-space: nowrap;
@@ -3628,7 +3601,7 @@ ul.noborder li:nth-child(even):not(.liste_titre) {
 }
 
 .boxtable:not(.widgetstats) td.tdboxstats .boxstats {
-	box-shadow: 1px 1px 8px var(--colorboxstatsborder);
+
 }
 
 .tabBar .fichehalfright .boxstats {
@@ -3704,7 +3677,7 @@ ul.noborder li:nth-child(even):not(.liste_titre) {
 }
 
 .boxstats:hover {
-	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.20);
+	
 }
 span.boxstatstext {
 	opacity: 0.5;
@@ -3751,7 +3724,7 @@ span.dashboardlineko {
     top: -27px;
     right: 2px;
     padding: 0px 5px 0px 5px;
-    border-radius: .25em;
+  
 
     background-color: #9f4705;
 }
@@ -3761,7 +3734,7 @@ span.dashboardlineko {
     margin-right: 2px;
     background-color: #8c4446;
     color: #FFFFFF ! important;
-    border-radius: .25em;
+  
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -4078,8 +4051,7 @@ div#card-errors {
   top: 80%;
   max-width:300px;
   background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
+  
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
   -o-transform: rotate(-3deg);
@@ -4158,14 +4130,11 @@ div.ui-tooltip {
 div.ui-tooltip.mytooltip {
 	border: none !important;
 	padding: 10px 15px;
-	border-radius: 0;
+
 	margin: 2px;
 	font-stretch: condensed;
-	-moz-box-shadow:   0.5px 0.5px 4px 0px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow:0.5px 0.5px 4px 0px rgba(0, 0, 0, 0.5);
-	-o-box-shadow:     0.5px 0.5px 4px 0px rgba(0, 0, 0, 0.5);
-	box-shadow:        0.5px 0.5px 4px 0px rgba(0, 0, 0, 0.5);
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+	
+	
 	background: var(--tooltipbgcolor) !important;
 	color : var(--tooltipfontcolor);
 }
@@ -4194,8 +4163,7 @@ img.datecallink { padding-left: 2px !important; padding-right: 2px !important; }
 }
 
 .bodyline {
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
+
 	border: 1px #E4ECEC outset;
 	padding: 0px;
 	margin-bottom: 5px;
@@ -4297,7 +4265,8 @@ tr.visible {
 }
 
 span[phptag] {
-	background: #ddd; border: 1px solid #ccc; border-radius: 4px;
+	background: #ddd; border: 1px solid #ccc;
+
 }
 
 .nobordertransp {
@@ -4319,7 +4288,7 @@ span[phptag] {
 	z-index: 1000;
 }
 .websitebar .buttonDelete, .websitebar .button {
-	text-shadow: none;
+
 }
 .websitebar .button, .websitebar .buttonDelete
 {
@@ -4695,10 +4664,8 @@ a.cke_dialog_ui_button
 	background-image: url(<?php echo $img_button ?>) !important;
 	background-position: bottom !important;
     border: 1px solid #C0C0C0 !important;
-	-webkit-border-radius:0px 5px 0px 5px !important;
-	border-radius:0px 5px 0px 5px !important;
-    -webkit-box-shadow: 3px 3px 4px #DDD !important;
-    box-shadow: 3px 3px 4px #DDD !important;
+	
+   
 }
 .cke_dialog_ui_hbox_last
 {
@@ -4712,7 +4679,7 @@ a.cke_dialog_ui_button
 }
 */
 a.cke_dialog_ui_button_ok span {
-    text-shadow: none !important;
+  
     color: #333 !important;
 }
 
@@ -4809,7 +4776,7 @@ pre#editfilecontentaceeditorid {
 	box-sizing:border-box;
 }
 #comment .comment {
-    border-radius:7px;
+  
     margin-bottom:10px;
     overflow:hidden;
 }
@@ -5035,8 +5002,7 @@ div#ecm-layout-center {
 /* use or not ? */
 div.jnotify-background {
 	opacity : 0.95 !important;
-    -webkit-box-shadow: 2px 2px 4px #888 !important;
-    box-shadow: 2px 2px 4px #888 !important;
+   ;
 }
 
 /* ============================================================================== */
@@ -5109,7 +5075,7 @@ table.dataTable tr.odd td.sorting_1, table.dataTable tr.even td.sorting_1 {
 }
 .paging_full_numbers, .paging_full_numbers a.paginate_active, .paging_full_numbers a.paginate_button {
 	background-color: var(--colorbackbody) !important;
-	border-radius: inherit !important;
+	
 }
 .paging_full_numbers a.paginate_button_disabled:hover, .paging_full_numbers a.disabled:hover {
     background-color: var(--colorbackbody) !important;
@@ -5203,7 +5169,7 @@ input.select2-input {
     margin-right: 23px;
 }
 .select2-container .select2-choice .select2-arrow {
-	border-radius: 0;
+	
     background: transparent;
 }
 .select2-container-multi .select2-choices {
@@ -5211,7 +5177,7 @@ input.select2-input {
 }
 .select2-container .select2-choice {
 	color: var(--colortext);
-	border-radius: 0;
+	
 }
 .selectoptiondisabledwhite {
 	background: #FFFFFF !important;
@@ -5228,7 +5194,7 @@ input.select2-input {
 	border-right: none !important;
 }
 .select2-drop.select2-drop-above {
-	box-shadow: none !important;
+	
 }
 .select2-container--open .select2-dropdown--above {
     border-bottom: solid 1px rgba(0,0,0,.2);
@@ -5244,9 +5210,8 @@ input.select2-input {
 	border-left: none;
 	border-right: none;
 	border-bottom: solid 1px rgba(0,0,0,.2);
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-	border-radius: 0 !important;
+	
+
 }
 .select2-container--default.select2-container--focus .select2-selection--multiple {
 	border-top: none;
@@ -5258,7 +5223,7 @@ input.select2-input {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-radius: 0 !important;
+
 	background: var(--inputbackgroundcolor);
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice{
@@ -5272,9 +5237,8 @@ input.select2-input {
 	border-left: none !important;
 	border-right: none !important;
 	border-bottom: solid 1px rgba(0,0,0,.2) !important;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-	border-radius: 0 !important;
+
+	
 	color: black;
 }
 .select2-container-active .select2-choice, .select2-container-active .select2-choices
@@ -5283,13 +5247,12 @@ input.select2-input {
 	border-top: none;
 	border-left: none;
 	border-bottom: none;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
+
 }
 .select2-dropdown {
 	/*background-color: var(--colorbackvmenu1);
 	border: 1px solid var(--colorbackvmenu1); */
-	box-shadow: 1px 2px 10px var(--colorbackvmenu1);
+
 }
 .select2-dropdown-open {
 	background-color: var(--colorbackvmenu1);
@@ -5300,8 +5263,7 @@ input.select2-input {
 	border-top: none;
 	border-left: none;
 	border-bottom: none;
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
+
 	background-color: var(--colorbackvmenu1);
 }
 .select2-disabled
@@ -5309,20 +5271,19 @@ input.select2-input {
 	color: #888;
 }
 .select2-drop.select2-drop-above.select2-drop-active, .select2-drop {
-	border-radius: 0;
+
 }
 .select2-drop.select2-drop-above {
-	border-radius:  0;
+	
 }
 .select2-dropdown-open.select2-drop-above .select2-choice, .select2-dropdown-open.select2-drop-above .select2-choices {
 	background-image: none;
-	border-radius: 0 !important;
+	
 }
 div.select2-drop-above
 {
 	background: var(--colorbackvmenu1);e
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
+	
 }
 .select2-drop-active
 {
@@ -5408,9 +5369,8 @@ span#select2-boxbookmark-container, span#select2-boxcombo-container {
   color: #333;
   cursor: default;
   border: 1px solid #aaaaaa;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 0 2px var(--inputbackgroundcolor) inset, 0 1px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 2px var(--inputbackgroundcolor) inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+ 
+ 
   background-clip: padding-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -5447,10 +5407,8 @@ span#select2-boxbookmark-container, span#select2-boxcombo-container {
 
 .noborderoncategories {
 	border: none !important;
-	border-radius: 5px !important;
-	box-shadow: none;
-	-webkit-box-shadow: none !important;
-    box-shadow: none !important;
+	
+	
 }
 span.noborderoncategories a, li.noborderoncategories a {
 	line-height: normal;
@@ -5490,7 +5448,7 @@ span.noborderoncategories {
   margin: 1em 0;
   padding: 0.4em 0;
   border: 1px solid #aaa;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  
   display: none;
 }
 
@@ -5586,8 +5544,7 @@ dl.dropdown {
 }
 .dropdown dd ul {
     background-color: var(--inputbackgroundcolor);
-    box-shadow: 1px 1px 10px #aaa;
-    display:none;
+    
     <?php echo $right; ?>:0px;						/* pop is align on right */
     padding: 0 0 0 0;
     position:absolute;
@@ -5595,7 +5552,7 @@ dl.dropdown {
     list-style:none;
     max-height: 264px;
     overflow: auto;
-    border-radius: 2px;
+    
 }
 .dropdown dd ul li {
 	white-space: nowrap;
@@ -5706,12 +5663,10 @@ div.ui-controlgroup-controls div.tabsElem
 }
 div.ui-controlgroup-controls div.tabsElem a
 {
-	-webkit-box-shadow: 0 -3px 6px rgba(0,0,0,.2);
-	box-shadow: 0 -3px 6px rgba(0,0,0,.2);
+	
 }
 div.ui-controlgroup-controls div.tabsElem a#active {
-	-webkit-box-shadow: 0 -3px 6px rgba(0,0,0,.3);
-	box-shadow: 0 -3px 6px rgba(0,0,0,.3);
+	
 }
 
 a.tab span.ui-btn-inner
@@ -5764,8 +5719,7 @@ div.ui-checkbox label+input, div.ui-radio label+input {
 }
 
 ul.ulmenu {
-	border-radius: 0;
-	-webkit-border-radius: 0;
+	/** */
 }
 
 .ui-field-contain label.ui-input-text {
@@ -5784,21 +5738,20 @@ ul.ulmenu {
 	font-weight: normal;
 }
 .ui-focus, .ui-btn:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    
 }
 .ui-bar-b {
     /*border: 1px solid #888;*/
     border: none;
     background: none;
-    text-shadow: none;
+   ;
     color: var(--colortexttitlenotab) !important;
 }
 .ui-bar-b, .lilevel0 {
     background-repeat: repeat-x;
     border: none;
     background: none;
-    text-shadow: none;
+ 
     color: var(--colortexttitlenotab) !important;
 }
 .alilevel0 {
@@ -5813,7 +5766,7 @@ ul.ulmenu {
     background: #f8f8f8
 }
 .ulmenu {
-	box-shadow: none !important;
+
 	border-bottom: 1px solid #ccc;
 }
 .ui-btn-icon-right {
@@ -5821,18 +5774,18 @@ ul.ulmenu {
 }
 .ui-body-c {
 	border: 1px solid #ccc;
-	text-shadow: none;
+
 }
 .ui-btn-up-c, .ui-btn-hover-c {
 	/* border: 1px solid #ccc; */
-	text-shadow: none;
+	
 }
 .ui-body-c .ui-link, .ui-body-c .ui-link:visited, .ui-body-c .ui-link:hover {
 	color: var(--colortextlink);
 }
 .ui-btn-up-c .vsmenudisabled {
 	color: #<?php echo $colorshadowtitle; ?> !important;
-	text-shadow: none !important;
+	
 }
 div.tabsElem a.tab {
 	background: transparent;
@@ -6028,8 +5981,8 @@ div.tabsElem a.tab {
   left: 0;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+
+  
   background: #d7e4ed;
 }
 .cd-timeline-img img {
@@ -6133,7 +6086,7 @@ div.tabsElem a.tab {
   position: relative;
   margin-left: 60px;
   background: white;
-  border-radius: 0.25em;
+
   padding: 1em;
   background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(230,230,230,0.4) 100%);
   background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(230,230,230,0.4) 100%);
@@ -6272,8 +6225,7 @@ div.tabsElem a.tab {
     div.tabBar {
         padding-left: 0px;
         padding-right: 0px;
-        -webkit-border-radius: 0;
-    	border-radius: 0px;
+     
         border-right: none;
         border-left: none;
     }

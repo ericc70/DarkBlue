@@ -12,8 +12,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet');
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ 
     border-width: 2px;
     border-style: solid;
     border-color: rgba(255,255,255,0);
@@ -28,7 +27,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet');
 .badge-pill, .tabs .badge {
     padding-right: .5em;
     padding-left: .5em;
-    border-radius: 0.25rem;
+ 
 }
 
 .badge-dot {
@@ -55,7 +54,7 @@ a.badge:focus, a.badge:hover {
 }
 a.badge-primary.focus, a.badge-primary:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgePrimary, 0.5); ?>;
+   
 }
 a.badge-primary:focus, a.badge-primary:hover {
     color: #fff !important;
@@ -69,7 +68,7 @@ a.badge-primary:focus, a.badge-primary:hover {
 }
 a.badge-secondary.focus, a.badge-secondary:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgeSecondary, 0.5); ?>;
+  
 }
 a.badge-secondary:focus, a.badge-secondary:hover {
     color: #fff !important;
@@ -83,8 +82,7 @@ a.badge-secondary:focus, a.badge-secondary:hover {
 }
 a.badge-success.focus, a.badge-success:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgeSuccess, 0.5); ?>;
-}
+   
 a.badge-success:focus, a.badge-success:hover {
     color: #fff !important;
     background-color: <?php print colorDarker($badgeSuccess, 10); ?>;
@@ -97,7 +95,7 @@ a.badge-success:focus, a.badge-success:hover {
 }
 a.badge-danger.focus, a.badge-danger:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgeDanger, 0.5); ?>;
+    
 }
 a.badge-danger:focus, a.badge-danger:hover {
     color: #fff !important;
@@ -111,7 +109,7 @@ a.badge-danger:focus, a.badge-danger:hover {
 }
 a.badge-warning.focus, a.badge-warning:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgeWarning, 0.5); ?>;
+    
 }
 a.badge-warning:focus, a.badge-warning:hover {
     color: #212529 !important;
@@ -123,7 +121,7 @@ body[class*="colorblind-"] .badge-warning {
 	  background-color: <?php print $colorblind_deuteranopes_badgeWarning; ?>;
   }
 body[class*="colorblind-"] a.badge-warning.focus,body[class^="colorblind-"] a.badge-warning:focus {
-	box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($colorblind_deuteranopes_badgeWarning, 0.5); ?>;
+	
 }
 body[class*="colorblind-"] a.badge-warning:focus, a.badge-warning:hover {
 	background-color: <?php print colorDarker($colorblind_deuteranopes_badgeWarning, 10); ?>;
@@ -136,7 +134,7 @@ body[class*="colorblind-"] a.badge-warning:focus, a.badge-warning:hover {
 }
 a.badge-info.focus, a.badge-info:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgeInfo, 0.5); ?>;
+  
 }
 a.badge-info:focus, a.badge-info:hover {
     color: #fff !important;
@@ -150,7 +148,7 @@ a.badge-info:focus, a.badge-info:hover {
 }
 a.badge-light.focus, a.badge-light:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgeLight, 0.5); ?>;
+ 
 }
 a.badge-light:focus, a.badge-light:hover {
     color: #212529 !important;
@@ -164,7 +162,7 @@ a.badge-light:focus, a.badge-light:hover {
 }
 a.badge-dark.focus, a.badge-dark:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem <?php print colorHexToRgb($badgeDark, 0.5); ?>;
+    
 }
 a.badge-dark:focus, a.badge-dark:hover {
     color: #fff !important;
@@ -234,7 +232,7 @@ function _createStatusBadgeCss($statusName, $statusVarNamePrefix = '', $commentL
 
 		print $cssPrefix.".badge-status".$statusName.".focus, ".$cssPrefix.".badge-status".$statusName.":focus {\n";
 		print "    outline: 0;\n";
-		print "    box-shadow: 0 0 0 0.2rem ".colorHexToRgb($thisBadgeBackgroundColor, 0.5).";\n";
+
 		print "}\n";
 
 		print $cssPrefix.".badge-status".$statusName.":focus, ".$cssPrefix.".badge-status".$statusName.":hover {\n";

@@ -70,10 +70,7 @@ span.butAction, span.butActionDelete {
     /* border: 1px solid #aaa; */
     /* border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25); */
 
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
+   
 }
 .butActionNew, .butActionNewRefused, .butActionNew:link, .butActionNew:visited, .butActionNew:hover, .butActionNew:active {
     text-decoration: none;
@@ -122,16 +119,15 @@ span.butActionNewRefused>span.fa, span.butActionNewRefused>span.fa:hover
 	padding-<?php echo $left; ?>: 6px;
 	font-size: 1.5em;
 	border: none;
-	box-shadow: none; webkit-box-shadow: none;
+	
 }
 
 .butAction:hover   {
-    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
-    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+   
 }
 .butActionNew:hover   {
     text-decoration: underline;
-    box-shadow: unset !important;
+ 
 }
 
 .butActionDelete, .butActionDelete:link, .butActionDelete:visited, .butActionDelete:hover, .butActionDelete:active, .buttonDelete {
@@ -141,8 +137,7 @@ span.butActionNewRefused>span.fa, span.butActionNewRefused>span.fa:hover
 }
 
 .butActionDelete:hover {
-    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
-    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+  
 }
 
 .butActionRefused {
@@ -179,8 +174,7 @@ span.butActionNewRefused>span.fa, span.butActionNewRefused>span.fa:hover
     cursor: pointer;
     color: #999 !important;
     padding-top: 0.2em;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+ 
 }
 
 .butActionTransparent {
@@ -208,7 +202,7 @@ TITLE BUTTON
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    box-shadow: var(--btncolorbg);
+ 
     text-decoration: none;
     position: relative;
     margin: 0 0 0 10px;
@@ -224,7 +218,7 @@ TITLE BUTTON
 
 a.btnTitle.btnTitleSelected {
     border: 1px solid #ccc;
-    border-radius: 3px;
+
 }
 
 .btnTitle > .btnTitle-icon{
@@ -237,7 +231,6 @@ a.btnTitle.btnTitleSelected {
 
 .btnTitle:hover, a.btnTitle:hover {
 	border: 1px solid #bbb;
-    border-radius: 3px;
     position: relative;
     margin: 0 0 0 10px;
     text-align: center;
@@ -245,7 +238,7 @@ a.btnTitle.btnTitleSelected {
     background-color: rgb(<?php print $colortextlink; ?>); */
     font-size: 12px;
     text-decoration: none;
-    box-shadow: none;
+    
 }
 
 .btnTitle.refused, a.btnTitle.refused, .btnTitle.refused:hover, a.btnTitle.refused:hover {
@@ -303,7 +296,6 @@ div.pagination li:first-child a.btnTitle{
 	border: 1px solid #ddd;
 	color: #333;
 	padding: 5px 10px;
-	border-radius:1em;
 	text-decoration: none !important;
 }
 
