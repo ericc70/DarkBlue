@@ -27,21 +27,22 @@
 	--colortextbackhmenu: #<?php echo $colortextbackhmenu; ?>;
 	--colortextbackvmenu: #<?php print $colortextbackvmenu; ?>;
 	--listetotal: #888888;
-	--inputbackgroundcolor: #FFF;
+	--inputbackgroundcolor: #152036;
 	--inputbordercolor: rgba(0,0,0,.2);
 	--tooltipbgcolor: <?php print $toolTipBgColor; ?>;
 	--tooltipfontcolor : <?php print $toolTipFontColor; ?>;
-	--oddevencolor: #202020;
+	--oddevencolor: #f0ffff;
 	--colorboxstatsborder: #e0e0e0;
 	--dolgraphbg: rgba(255,255,255,0);
 	--fieldrequiredcolor: #000055;
-	--colortextbacktab: #<?php print $colortextbacktab; ?>;
+	--colortextbacktab: #<?php print $colortext; ?>;
 	--colorboxiconbg: #eee;
 	--refidnocolor:#444;
 	--tableforfieldcolor:#666;
 	--amountremaintopaycolor:#880000;
 	--amountpaymentcomplete:#008800;
 	--amountremaintopaybackcolor:none;
+	--colortextwhite01:#f0ffff;
 }
 
 <?php
@@ -65,7 +66,7 @@ if (!empty($conf->global->MAIN_THEME_DARKMODEENABLED)) {
 	            --colortexttitlenotab: rgb(220,220,220);
 	            --colortexttitlenotab2: rgb(220,220,220);
 	            --colortexttitle: rgb(220,220,220);
-	            --colortext: rgb(220,220,220);
+	            --colortext: rgb(240,255,255);
 	            --colortextlink: #4390dc;
 	            --colortextbackhmenu: rgb(220,220,220);
 	            --colortextbackvmenu: rgb(220,220,220);
@@ -123,7 +124,7 @@ tr.liste_titre th.liste_titre:not(.maxwidthsearch), tr.liste_titre td.liste_titr
 /* th.liste_titre_sel a, th.liste_titre a, td.liste_titre_sel a, td.liste_titre a { color: #766; } */
 input, input.flat, textarea, textarea.flat, form.flat select, select, select.flat, .dataTables_length label select {
 	background-color: var(--inputbackgroundcolor);
-	color: var(--colortext);
+	color: var(--colortextwhite01);
 }
 select.vmenusearchselectcombo {
 	background-color: unset;
@@ -1359,7 +1360,6 @@ td.showDragHandle {
 
 .side-nav {
 	display: table-cell;
-	border-<?php echo $right; ?>: 1px solid #E0E0E0;
 	
 	background: var(--colorbackvmenu1);
 	transition: left 0.5s ease;
@@ -1465,7 +1465,7 @@ body.sidebar-collapse .login_block {
 	padding-left: 20px;
 	padding-right: 20px;
 	position: absolute;
-    	z-index: 90;
+   	z-index: 90;
 }
 div.blockvmenulogo
 {
@@ -2658,14 +2658,13 @@ div.tabsElem a.tabactive::before, div.tabsElem a.tabunactive::before {
 */
 div.tabBar {
     color: var(--colortextbacktab);
-    padding-top: 16px;
-    padding-left: 0px; padding-right: 0px;
-    padding-bottom: 2px;
+    padding: 16px;
+
     margin: 0px 0px 16px 0px;
-    border-top: 1px solid #BBB;
-    /* border-bottom: 1px solid #AAA; */
+    /* border-top: 1px solid #BBB; */
+    border-bottom: 1px solid var( --colortopbordertitle1 );
 	width: auto;
-	background: var(--colorbacktabcard1);
+	background-color: var(--colorbackhmenu1);
 }
 div.tabBar tr.titre td {
 	padding-top: 20px;
@@ -2682,7 +2681,7 @@ div.tabBar.tabBarNoTop {
 /* tabBar used for creation/update/send forms */
 div.tabBarWithBottom {
 	padding-bottom: 18px;
-	border-bottom: 1px solid #bbb;
+	border-bottom: 1px solid var(--colorbacktitle1 );
 }
 div.tabBarWithBottom tr {
 	background: unset !important;
@@ -2693,6 +2692,7 @@ div.tabBarWithBottom table.border>tbody>tr:last-of-type>td {
 
 div.tabBar table.tableforservicepart2:last-child {
     border-bottom: 1px solid #aaa;
+	
 }
 .tableforservicepart1 .tdhrthin {
 	height: unset;
@@ -2986,6 +2986,7 @@ table.liste tr:last-of-type td, table.noborder:not(#tablelines) tr:last-of-type 
 	border-bottom-width: 1px;
 	border-bottom-color: rgb(<?php echo $colortopbordertitle1 ?>);
 	border-bottom-style: solid;
+	
 }
 div.tabBar div.fichehalfright table.noborder:not(.margintable):not(.paymenttable):not(.lastrecordtable):last-of-type {
     border-bottom: 1px solid rgb(<?php echo $colortopbordertitle1 ?>);
@@ -3045,6 +3046,8 @@ table.liste td, table.noborder td, div.noborder form div, table.tableforservicep
 	padding: 7px 8px 7px 8px;			/* t r b l */
 	/* line-height: 22px; This create trouble on cell login on list of last events of a contract*/
 	height: 22px;
+	/* background-color: var(--colorbackhmenu1) */
+	/* background-color: var( --colorbacktitle1  ); */
 }
 div.liste_titre_bydiv .divsearchfield {
 	padding: 2px 1px 2px 7px;			/* t r b l */
@@ -3268,10 +3271,10 @@ table.hidepaginationnext .paginationnext {
 <?php } ?>
 
 .nohover:hover {
-	background: unset !important;
+	/* background: unset !important; */
 }
 .nohoverborder:hover {
-	border: unset;
+	/* border: unset; */
 	
 }
 .oddeven, .evenodd, .impair, .nohover .impair:hover, tr.impair td.nohover, .tagtr.oddeven
@@ -3279,6 +3282,7 @@ table.hidepaginationnext .paginationnext {
 	font-family: <?php print $fontlist ?>;
 	margin-bottom: 1px;
 	color: var(--oddevencolor);
+	background-color: var(--colorbackhmenu1);
 }
 .impair, .nohover .impair:hover, tr.impair td.nohover
 {
@@ -3303,17 +3307,16 @@ table.dataTable tr.oddeven {
 
 /* For no hover style */
 td.oddeven, table.nohover tr.impair, table.nohover tr.pair, table.nohover tr.impair td, table.nohover tr.pair td, tr.nohover td, form.nohover, form.nohover:hover {
-	background-color: var(--colorbacklineimpair1) !important;
-	background: var(--colorbacklineimpair1) !important;
+	 background-color: var(--colorbackhmenu1) !important; 
+
 }
 td.evenodd, tr.nohoverpair td, #trlinefordates td {
-	background-color: var(--colorbacklinepair1) !important;
-	background: var(--colorbacklinepair1) !important;
+	background-color: var(--colorbackhmenu1) !important; 
 }
 .trforbreak td {
-	font-weight: 500;
+	 font-weight: 500;
     border-bottom: 1pt solid black !important;
-	background-color: var(--colorbacklinebreak) !important;
+ background-color: var(--colorbackhmenu1) !important; 
 }
 .trforbreak.nobold td a, .trforbreak.nobold span.secondary {
     font-weight: normal !important;
@@ -3426,6 +3429,7 @@ tr.liste_titre_topborder td {
 tr.liste_titre:last-child th.liste_titre, tr.liste_titre:last-child th.liste_titre_sel, tr.liste_titre td.liste_titre, tr.liste_titre td.liste_titre_sel, form.liste_titre div.tagtd {				/* For last line of table headers only */
     /* border-bottom: 1px solid #ddd; */
     border-bottom: unset;
+
 }
 
 div.liste_titre {
@@ -3514,7 +3518,7 @@ div.tabBar .noborder {
 
 /* Prepare to remove class pair - impair */
 
-.noborder:not(.editmode) > tbody > tr:nth-child(even):not(.liste_titre), .liste > tbody > tr:nth-child(even):not(.liste_titre),
+/* .noborder:not(.editmode) > tbody > tr:nth-child(even):not(.liste_titre), .liste > tbody > tr:nth-child(even):not(.liste_titre),
 div:not(.fichecenter):not(.fichehalfleft):not(.fichehalfright):not(.ficheaddleft) > .border > tbody > tr:nth-of-type(even):not(.liste_titre), .liste > tbody > tr:nth-of-type(even):not(.liste_titre),
 div:not(.fichecenter):not(.fichehalfleft):not(.fichehalfright):not(.ficheaddleft) .oddeven.tagtr:nth-of-type(even):not(.liste_titre)
 {
@@ -3522,13 +3526,13 @@ div:not(.fichecenter):not(.fichehalfleft):not(.fichehalfright):not(.ficheaddleft
 	background: -o-linear-gradient(bottom, var(--colorbacklineimpair1) 85%, var(--colorbacklineimpair2) 100%);
 	background: -moz-linear-gradient(bottom, var(--colorbacklineimpair1) 85%, var(--colorbacklineimpair2) 100%);
 	background: -webkit-linear-gradient(bottom, var(--colorbacklineimpair1) 85%, var(--colorbacklineimpair2) 100%);
-	/* background: -ms-linear-gradient(bottom, var(--colorbacklineimpair1) 85%, var(--colorbacklineimpair2) 100%); */
+	/* background: -ms-linear-gradient(bottom, var(--colorbacklineimpair1) 85%, var(--colorbacklineimpair2) 100%); 
 }
 .noborder > tbody > tr:nth-child(even):not(:last-child) td:not(.liste_titre), .liste > tbody > tr:nth-child(even):not(:last-child) td:not(.liste_titre),
 .noborder .oddeven.tagtr:nth-child(even):not(:last-child) .tagtd:not(.liste_titre)
 {
 	border-bottom: 1px solid #e0e0e0;
-}
+} 
 
 .noborder:not(.editmode) > tbody > tr:nth-child(odd):not(.liste_titre), .liste > tbody > tr:nth-child(odd):not(.liste_titre),
 div:not(.fichecenter):not(.fichehalfleft):not(.fichehalfright):not(.ficheaddleft) > .border > tbody > tr:nth-of-type(odd):not(.liste_titre), .liste > tbody > tr:nth-of-type(odd):not(.liste_titre),
@@ -3538,8 +3542,8 @@ div:not(.fichecenter):not(.fichehalfleft):not(.fichehalfright):not(.ficheaddleft
 	background: -o-linear-gradient(bottom, var(--colorbacklinepair1) 85%, var(--colorbacklinepair2) 100%);
 	background: -moz-linear-gradient(bottom, var(--colorbacklinepair1) 85%, var(--colorbacklinepair2) 100%);
 	background: -webkit-linear-gradient(bottom, var(--colorbacklinepair1) 85%, var(--colorbacklinepair2) 100%);
-	/* background: -ms-linear-gradient(bottom, var(--colorbacklinepair1) 85%, var(--colorbacklinepair2) 100%); */
-}
+	 background: -ms-linear-gradient(bottom, var(--colorbacklinepair1) 85%, var(--colorbacklinepair2) 100%); 
+} 
 .noborder > tbody > tr:nth-child(odd):not(:last-child) td:not(.liste_titre), .liste > tbody > tr:nth-child(odd):not(:last-child) td:not(.liste_titre),
 .noborder .oddeven.tagtr:nth-child(odd):not(:last-child) .tagtd:not(.liste_titre)
 {
@@ -3550,7 +3554,7 @@ ul.noborder li:nth-child(even):not(.liste_titre) {
 	background-color: var(--colorbacklinepair2) !important;
 }
 
-
+*/
 /*
  *  Boxes
  */
@@ -3575,10 +3579,9 @@ ul.noborder li:nth-child(even):not(.liste_titre) {
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
-
+color:var(--colortextwhite01);
     background: var(--colorbackbody);
-    border: 1px solid var(--colorboxstatsborder);
-    border-left: 6px solid var(--colorboxstatsborder);
+	background-color: rgba(0, 0, 0, 0.5)
    
    
 }
@@ -3682,7 +3685,7 @@ ul.noborder li:nth-child(even):not(.liste_titre) {
 span.boxstatstext {
 	opacity: 0.5;
     line-height: 18px;
-    color: var(--colortext);
+    color: var(--colortextwhite01);
 }
 span.boxstatstext img, a.dashboardlineindicatorlate img {
 	border: 0;
@@ -3929,6 +3932,9 @@ td.legendLabel {
     text-align: <?php echo $left; ?>;
 }
 
+.dolgraphchart {
+	background-color: #f0ffff;
+}
 label.radioprivate {
     white-space: nowrap;
 }
@@ -5157,7 +5163,7 @@ input.select2-input {
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: var(--colortext);
-    /* background-color: var(--colorbackvmenu1); */
+    background-color: var(--inputbackgroundcolor)
 }
 .select2-default {
     color: #999 !important;
@@ -5198,6 +5204,7 @@ input.select2-input {
 }
 .select2-container--open .select2-dropdown--above {
     border-bottom: solid 1px rgba(0,0,0,.2);
+
 }
 .select2-drop.select2-drop-above.select2-drop-active {
 	border-top: 1px solid #ccc;
@@ -5250,8 +5257,9 @@ input.select2-input {
 
 }
 .select2-dropdown {
-	/*background-color: var(--colorbackvmenu1);
-	border: 1px solid var(--colorbackvmenu1); */
+	/* background-color: var(--colorbackvmenu1); */
+	background-color: rgba(0, 0, 0, 0.91);
+	border: 1px solid var(--colorbackvmenu1);
 
 }
 .select2-dropdown-open {
@@ -5544,7 +5552,7 @@ dl.dropdown {
 }
 .dropdown dd ul {
     background-color: var(--inputbackgroundcolor);
-    
+    display:none;
     <?php echo $right; ?>:0px;						/* pop is align on right */
     padding: 0 0 0 0;
     position:absolute;
@@ -5760,6 +5768,7 @@ ul.ulmenu {
 
 .ui-li.ui-last-child, .ui-li.ui-field-contain.ui-last-child {
     border-bottom-width: 0px !important;
+
 }
 .alilevel0 {
     color: var(--colortexttitle) !important;
@@ -6229,7 +6238,9 @@ div.tabsElem a.tab {
         border-right: none;
         border-left: none;
     }
+
 }
+
 
 @media only screen and (max-width: 1024px)
 {
@@ -6439,3 +6450,4 @@ if (!empty($conf->global->THEME_CUSTOM_CSS)) print $conf->global->THEME_CUSTOM_C
 div.flot-text .flot-tick-label .tickLabel {
 	color: unset;
 }
+

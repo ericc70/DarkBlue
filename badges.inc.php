@@ -82,7 +82,7 @@ a.badge-secondary:focus, a.badge-secondary:hover {
 }
 a.badge-success.focus, a.badge-success:focus {
     outline: 0;
-   
+}
 a.badge-success:focus, a.badge-success:hover {
     color: #fff !important;
     background-color: <?php print colorDarker($badgeSuccess, 10); ?>;

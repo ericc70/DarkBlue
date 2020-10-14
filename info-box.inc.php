@@ -17,7 +17,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 	min-height: 90px;
 	/* background: #fff; */
 	width: 100%;
-    border: 1px solid #e9e9e9;
+	background-color: var(--colorbackhmenu1);
 	margin-bottom: 15px;
 }
 .info-box.info-box-sm{
@@ -68,7 +68,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet'); ?>
 	text-align: center;
 	font-size: 45px;
 	line-height: 90px;
-	background: rgba(0, 0, 0, 0.08) !important
+	background: rgba(0, 0, 0, 0.9) !important
 }
 .info-box-sm .info-box-icon {
     height: 80px;
@@ -160,6 +160,7 @@ a.info-box-text-a i.fa.fa-exclamation-triangle {
 .info-box-content {
 	padding: 5px 10px;
 	margin-left: 84px;
+	color:var(--colortextwhite01)
 }
 
 .info-box-sm .info-box-content{
@@ -336,7 +337,7 @@ if (GETPOSTISSET('THEME_SATURATE_RATIO')) $conf->global->THEME_SATURATE_RATIO = 
 
 /* USING FONTAWESOME FOR WEATHER */
 .info-box-weather .info-box-icon{
-	background: rgba(0, 0, 0, 0.08) !important;
+	background: rgba(0, 0, 0, 0.90) !important;
 }
 .fa-weather-level0:before{
 	content: "\f185";
