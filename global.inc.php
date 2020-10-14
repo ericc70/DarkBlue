@@ -2651,14 +2651,15 @@ div.tabs {
 div.tabsElem {
 	margin-top: 1px;
 }	/* To avoid overlap of tabs when not browser */
-/*
-div.tabsElem a.tabactive::before, div.tabsElem a.tabunactive::before {
+
+/* div.tabsElem a.tabactive::before, div.tabsElem a.tabunactive::before {
     content: "\f0da";
     font-family: "Font Awesome 5 Free";
     padding-right: 2px;
     font-weight: 900;
-}
-*/
+
+} */
+
 div.tabBar {
     color: var(--colortextbacktab);
     padding: 16px;
@@ -2775,14 +2776,12 @@ a.tab:link, a.tab:visited, a.tab:hover, a.tab#active {
 	background-image: none !important;
 }
 .tabactive, a.tab#active {
-	color: var(--colortextbacktab); !important;
-	background: var(--colorbacktabcard1) !important;
+	color: var(--colortextbacktab) !important;
+	background: var(--colorbackhmenu1 ) !important;
 	margin: 0 0.2em 0 0.2em !important;
 
-	border-right: 1px solid #CCC !important;
-	border-left: 1px solid #CCC !important;
-	/* border-top: <?php echo 2; ?>px solid rgb(<?php echo $colortopbordertitle1; ?>) !important; */
-	border-top: <?php echo 2; ?>px solid var(--colorbackhmenu1) !important;
+
+
 }
 a.tab:hover
 {
