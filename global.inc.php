@@ -5221,7 +5221,7 @@ input.select2-input {
 	border-left: none;
 	border-right: none;
 	border-bottom: solid 1px rgba(0,0,0,.2);
-	
+	background-color :var(--inputbackgroundcolor);
 
 }
 .select2-container--default.select2-container--focus .select2-selection--multiple {

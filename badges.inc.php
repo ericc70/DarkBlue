@@ -32,7 +32,7 @@ if (!defined('ISLOADEDBYSTEELSHEET')) die('Must be call by steelsheet');
 
 .badge-dot {
     padding: 0;
-    border-radius: 50%;
+   
     padding: 0.45em;
     vertical-align: text-top;
 }
