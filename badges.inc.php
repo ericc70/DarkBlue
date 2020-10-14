@@ -121,7 +121,7 @@ body[class*="colorblind-"] .badge-warning {
 	  background-color: <?php print $colorblind_deuteranopes_badgeWarning; ?>;
   }
 body[class*="colorblind-"] a.badge-warning.focus,body[class^="colorblind-"] a.badge-warning:focus {
-	
+	 
 }
 body[class*="colorblind-"] a.badge-warning:focus, a.badge-warning:hover {
 	background-color: <?php print colorDarker($colorblind_deuteranopes_badgeWarning, 10); ?>;

@@ -1493,7 +1493,9 @@ div.fiche {
 	margin-<?php print $left; ?>: <?php print (GETPOST('optioncss', 'aZ09') == 'print' ? 6 : (empty($conf->dol_optimize_smallscreen) ? '30' : '6')); ?>px;
 	margin-<?php print $right; ?>: <?php print (GETPOST('optioncss', 'aZ09') == 'print' ? 6 : (empty($conf->dol_optimize_smallscreen) ? '28' : '6')); ?>px;
 	<?php if (!empty($dol_hide_leftmenu)) print 'margin-bottom: 12px;'."\n"; ?>
+
 	<?php if (!empty($dol_hide_leftmenu)) print 'margin-top: 12px;'."\n"; ?>
+	
 }
 body.onlinepaymentbody div.fiche {	/* For online payment page */
 	margin: 20px !important;
@@ -1547,6 +1549,7 @@ div.secondcolumn div.box {
     div.fiche {
     	margin-<?php print $left; ?>: <?php print (GETPOST('optioncss', 'aZ09') == 'print' ? 6 : ($dol_hide_leftmenu ? '6' : '20')); ?>px;
     	margin-<?php print $right; ?>: <?php print (GETPOST('optioncss', 'aZ09') == 'print' ? 8 : 6); ?>px;
+		
     }
     div.fichecenter {
     	width: 100%;
@@ -3187,6 +3190,7 @@ div.pagination li a,
 div.pagination li span {
   /* background-color: #fff; */
   /* border: 1px solid #ddd; */
+  /* background-color: rgba(0, 0, 0, 0.9); */
 }
 div.pagination li:first-child a,
 div.pagination li:first-child span {
@@ -5137,6 +5141,7 @@ span.select2.select2-container.select2-container--default {
 }
 input.select2-input {
 	border-bottom: none ! important;
+	color:#f0ffff;
 }
 .select2-choice {
 	border: none;
@@ -5290,7 +5295,7 @@ input.select2-input {
 }
 div.select2-drop-above
 {
-	background: var(--colorbackvmenu1);e
+	background: var(--colorbackvmenu1);
 	
 }
 .select2-drop-active
@@ -5300,6 +5305,7 @@ div.select2-drop-above
 }
 .select2-search input {
 	border: none;
+	color:#f0ffff;
 }
 a span.select2-chosen
 {
@@ -6451,3 +6457,6 @@ div.flot-text .flot-tick-label .tickLabel {
 	color: unset;
 }
 
+/* .div-table-responsive-no-min .centpercent .center .dolgraphchart {
+	background-color: yellow;
+} */
