@@ -8,6 +8,6 @@ testé sous dolibarr 12.0.3
 
 
 ### Install
- - crées un dossier nomé darkblue dans htdocs\theme\ 
+ - crées un dossier nommé darkblue dans htdocs\theme\ 
  - clone le projet
  - active le theme depuis l'interface administration de dolibarr
