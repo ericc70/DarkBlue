@@ -15,4 +15,4 @@ testé sous dolibarr 12.0.3
 
 ---
 
-*Tu souhaites utiliser ce thème en production, et tu souhaiterais que j'y apporte des modifications éventuelles, tu peux me les faire parvenir sur Telegram (lien sur mon profil github)*
+*Tu souhaites utiliser ce thème en production, et tu souhaiterais que j'y apporte des modifications éventuelles, ou une mise à jour vers la nouvelle version de Dolibarr, dis moi le sur Telegram (lien sur mon profil github)*
